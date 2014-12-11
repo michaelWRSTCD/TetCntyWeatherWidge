@@ -1,0 +1,17 @@
+<!doctype html>
+<head>
+	<link rel="stylesheet" href="./mw-ticker.css"/>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="./mw-ticker.js"></script>
+</head>
+<body width="100%">
+	<div id="container"></div>
+	<script language="javascript" type="text/javascript">
+		ticker('container',{
+			variable: 'wind_speed',
+			network: 1,
+			state: 'NH',
+			color: 'green'
+		});
+	</script>
+</body>
