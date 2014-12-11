@@ -69,7 +69,7 @@ function ticker(tdiv,options) {
 	var idLink = options.tabularLink || true;
 	getOldData();
 	function getData() {
-		$.ajax({url: 'http://api.mesowest.net/v2/stations/nearesttime?token=6486a2ac397c4cd798568aeb4fee1575&within=180&showemptystations=1&status=active&units=english&vars='+varSel+restofquery,
+		$.ajax({url: 'http://api.mesowest.net/v2/stations/nearesttime?token=1234567890&within=180&showemptystations=1&status=active&units=english&vars='+varSel+restofquery,
 			success: function(data) {
 				console.log('New Data Came In');
 				ticker.stop();
@@ -114,7 +114,7 @@ function ticker(tdiv,options) {
 	function getOldData() {
 		var now = new Date();
 		var hourago = mwDate(new Date(now-3600*1000));
-		$.ajax({url: 'http://api.mesowest.net/v2/stations/nearesttime?token=6486a2ac397c4cd798568aeb4fee1575&within=180&showemptystations=1&status=active&units=english&vars='+varSel+'&attime='+hourago+restofquery,
+		$.ajax({url: 'http://api.mesowest.net/v2/stations/nearesttime?token=1234567890&within=180&showemptystations=1&status=active&units=english&vars='+varSel+'&attime='+hourago+restofquery,
 			success: function(data) {
 				console.log('Old Data Came In');
 				oldat = data;
