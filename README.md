@@ -3,7 +3,6 @@ mw-ticker
 
 ###News/Stock-style ticker widget that scrolls real-time weather observations.
 
-Designed by Matt Lammers, matt.lammers@utah.edu, 10 December 2014.  
 The self-contained MesoWest Ob Ticker, running on MesoWest API V2.  
 **Requires JQuery.    
 **Requires the accompanying css file: mw-ticker.css.  
